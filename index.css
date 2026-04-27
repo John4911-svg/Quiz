@@ -1,0 +1,114 @@
+/* 1. Global Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* 2. Responsive Container */
+#mainContainer {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px; /* Limits width on big screens */
+    margin: auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Question Card Styling */
+#questionsDisplayarea > div {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1rem;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: color 0.2s ease;
+}
+
+label:hover {
+    color: #007bff;
+}
+
+button {
+    width: 100%; 
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* 6. Media Queries for Different Screens */
+
+@media (max-width: 768px) {
+    #mainContainer {
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; 
+    }
+
+    #mainContainer {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    label {
+        font-size: 0.95rem; 
+    }
+}
+
